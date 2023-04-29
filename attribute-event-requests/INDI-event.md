@@ -24,6 +24,7 @@ Guides for using this document can be found in the associated [README.md](README
 | `FCOM` | 4.0 | First Communion | |
 | `GRAD` | 4.0 | Graduation | |
 | `IMMI` | 3.0 | [Immigration](#immigration) | |
+| | | [Military Service](#Military) | |
 | `NATU` | 3.0 | [Naturalization](#naturalization) | |
 | `ORDN` | 3.0 | Ordination | |
 | `PROB` | 3.0 | Probate | |
@@ -65,6 +66,48 @@ In [GEDCOM X](https://github.com/FamilySearch/gedcomx/blob/master/specifications
 ## Immigration
 
 In [GEDCOM X](https://github.com/FamilySearch/gedcomx/blob/master/specifications/fact-types-specification.md) with URI `http://gedcomx.org/Immigration`
+
+## Military
+
+### Description
+* Military service is service by an individual in an army or other militia, air forces, and naval forces, whether as a chosen job (volunteer) or as a result of an involuntary draft (conscription). As an event this will register all events associated with "being in the military", such as, but not limited to 1) Induction , 2) Discharge, 3) Commission, 4) Engagement, 5) Deployment, 6) Service Award, 7) Other/Phrase.  By using the subtag `TYPE` with the optional `PHRASE` all service events can be enumerated. 
+
+### Value
+
+Found in the following historical records:
+
+- Military induction papers
+- Military records
+- Military discharge papers
+- Military awards and recognitions
+- Veteran registries and group memberships
+- Private journals, biographies, and obituaries 
+
+### Proposed Tag and Enumeration
+
+* `MILT`
+* Induction, Discharge, Commission, Engagement, Deployment, Service Award, Other/`Phrase`
+
+### Absence
+
+The most closely related structures are:
+
+- 
+
+Related proposals include
+
+- GEDCOM-X has events "Military Induction" and "Military Discharge" which define the start and end of the military service
+
+### GEDCOM Use
+
+1 MILT 
+2 TYPE Induction
+
+1 MILT Battle of ...
+2 TYPE Engagement
+
+1 MILT Pacific Theater
+2 TYPE Service Award
 
 ## Naturalization
 
